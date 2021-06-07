@@ -46,6 +46,7 @@ public class PaperController {
 
     @RequestMapping("toUpdatePaper")
     public String toUpdatePaper(Model model, Long id) {
+        System.out.println(paperService.queryById(id).toString());
         model.addAttribute("paper", paperService.queryById(id));
         return "updatePaper";
     }

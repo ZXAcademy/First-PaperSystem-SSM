@@ -1,12 +1,7 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: lenovo
-  Date: 2018/4/6
-  Time: 16:57
-  To change this template use File | Settings | File Templates.
---%>
+<% pageContext.setAttribute("path", request.getContextPath());%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%--<%@ page contentType="text/html;charset=UTF-8" language="java" %>--%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <% String appPath = request.getContextPath(); %>
 <html>
 <head>

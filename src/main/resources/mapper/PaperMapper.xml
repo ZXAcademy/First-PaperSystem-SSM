@@ -6,14 +6,14 @@
 <mapper namespace="com.dao.PaperDao">
     <resultMap type="Paper" id="paperResultMap" >
         <id property="paperId" column="paper_id"/>
-        <result property="paperName" column="name"/>
-        <result property="paperNum" column="number"/>
-        <result property="paperDetail" column="detail"/>
+        <result property="paperName" column="paper_name"/>
+        <result property="paperNum" column="paper_num"/>
+        <result property="paperDetail" column="paper_detail"/>
     </resultMap>
 
 
     <insert id="addPaper" parameterType="Paper">
-        INSERT INTO paper(paper_id,name,number,detail) VALUE (#{paperId},#{paperName}, #{paperNum}, #{paperDetail})
+        INSERT INTO paper(paper_id,paper_name,paper_num,paper_detail) VALUE (#{paperId},#{paperName}, #{paperNum}, #{paperDetail})
     </insert>
 
     <delete id="deletePaperById" parameterType="long">
@@ -22,17 +22,17 @@
 
     <update id="updatePaper" parameterType="Paper">
         UPDATE paper
-        SET NAME = #{paperName},NUMBER = #{paperNum},detail = #{paperDetail}
+        SET paper_name = #{paperName},paper_num = #{paperNum},paper_detail = #{paperDetail}
         WHERE  paper_id = #{paperId}
     </update>
 
     <select id="queryById" resultType="Paper" parameterType="long">
-        SELECT paper_id,name,number,detail
+        SELECT paper_id,paper_name,paper_num,paper_detail
         FROM paper
         WHERE paper_id=#{paperId}
     </select>
     <select id="queryAllPaper" resultMap="paperResultMap">
-        SELECT paper_id,name,number,detail
+        SELECT paper_id,paper_name,paper_num,paper_detail
         FROM paper
     </select>
 

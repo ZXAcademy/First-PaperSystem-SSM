@@ -7,7 +7,7 @@ public class Paper {
     private String paperDetail;
 
     public long getPaperId() {
-        return paperId;
+        return this.paperId;
     }
 
     public void setPaperId(long paperId) {
@@ -15,7 +15,7 @@ public class Paper {
     }
 
     public String getPaperName() {
-        return paperName;
+        return this.paperName;
     }
 
     public void setPaperName(String paperName) {
@@ -38,4 +38,13 @@ public class Paper {
         this.paperDetail = paperDetail;
     }
 
+    @Override
+    public String toString() {
+        return "Paper{" +
+                "paperId=" + paperId +
+                ", paperName='" + paperName + '\'' +
+                ", paperNum=" + paperNum +
+                ", paperDetail='" + paperDetail + '\'' +
+                '}';
+    }
 }

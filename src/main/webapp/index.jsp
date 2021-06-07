@@ -27,23 +27,25 @@
 </head>
 <body>
 <h1>Hello World</h1>
-
+<h1>
+    <a href="/paper/allPaper">点击进入</a>
+</h1>
 
 
 <%--<div class="container">--%>
-    <%--<div class="row clearfix">--%>
-        <%--<div class="col-md-12 column">--%>
-            <%--<div class="page-header">--%>
-                <%--<h1>--%>
-                    <%--基于SSM框架的管理系统：简单实现增、删、改、查。--%>
-                <%--</h1>--%>
-            <%--</div>--%>
-        <%--</div>--%>
-    <%--</div>--%>
+<%--<div class="row clearfix">--%>
+<%--<div class="col-md-12 column">--%>
+<%--<div class="page-header">--%>
+<%--<h1>--%>
+<%--基于SSM框架的管理系统：简单实现增、删、改、查。--%>
+<%--</h1>--%>
+<%--</div>--%>
+<%--</div>--%>
+<%--</div>--%>
 <%--</div>--%>
 <%--<br><br>--%>
 <%--<h3>--%>
-    <%--<a href="${path }/paper/allPaper">点击进入管理页面</a>--%>
+<%--<a href="${path }/paper/allPaper">点击进入管理页面</a>--%>
 <%--</h3>--%>
 </body>
 </html>

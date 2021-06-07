@@ -1,5 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     String path = request.getContextPath();
     String basePath = request.getScheme() + "://"
@@ -37,9 +37,18 @@
 
     <form action="" name="userForm">
         <input type="hidden" name="paperId" value="${paper.paperId}"/>
-        论文名称：<input type="text" name="paperName" value="${paper.paperName}"/>
-        论文数量：<input type="text" name="paperNum" value="${paper.paperNum}"/>
-        论文详情：<input type="text" name="paperDetail" value="${paper.paperDetail }"/>
+        论文名称：
+        <label>
+            <input type="text" name="paperName" value="${paper.paperName}"/>
+        </label>
+        论文数量 ：
+        <label>
+            <input type="text" name="paperNum" value="${paper.paperNum}"/>
+        </label>
+        论文详情 ：
+        <label>
+            <input type="text" name="paperDetail" value="${paper.paperDetail}"/>
+        </label>
         <input type="button" value="提交" onclick="updatePaper()"/>
     </form>
     <script type="text/javascript">
