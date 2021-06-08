@@ -1,37 +1,47 @@
 # 第一个SSM项目：简单的增删改查实现
 
-#### 介绍
-第一个SSM项目：简单的增删改查实现。
+### 1. 介绍
 
-#### 软件架构
-软件架构说明
+本项目是博文 [https://cxhit.blog.csdn.net/article/details/93914895](https://cxhit.blog.csdn.net/article/details/93914895) 中的源码。
 
+相比较于原文，主要做了如下修改：
 
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+0. 新增数据库脚本（database目录下）
+1. 调整数据库列名（PaperMapper.xml中）
+2. 修改了几处BUG（JSP页面中）
 
 
-#### 特技
+### 2. 环境
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+开发环境：
+
+1. idea 2018
+2. 数据库：MySQL 8.0
+3. Tomcat 8.5.31
+
+推荐环境：
+
+1. idea 2018+
+2. MySQL 5.6/5.7/8.0
+3. Tomcat 8.0+
+
+### 3. 注意事项
+
+1. 数据库：
+
+根据 jdbc.properties 文件中的提示，选择合适的数据库驱动 driver。
+
+```properties
+# MySQL 5.X
+jdbc.driver=com.mysql.jdbc.Driver
+# MySQL 8.X
+jdbc.driver=com.mysql.cj.jdbc.Driver
+```
+
+数据库为 **推荐环境** 中的低版本MySQL，一般不需要修改POM文件。
+
+如果MySQL版本更低，建议参考 [https://mvnrepository.com/artifact/mysql/mysql-connector-java](https://mvnrepository.com/artifact/mysql/mysql-connector-java) 进行修改。
+
+### 4. LICENSE
+
+MIT
