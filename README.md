@@ -1,5 +1,9 @@
 # 第一个SSM项目：简单的增删改查实现
 
+此仓库仅作为备份使用。
+
+最新仓库请访问：[https://gitee.com/ZXAcademy/First-PaperSystem-SSM](https://gitee.com/ZXAcademy/First-PaperSystem-SSM)
+
 ### 1. 介绍
 
 本项目是博文 [https://cxhit.blog.csdn.net/article/details/93914895](https://cxhit.blog.csdn.net/article/details/93914895) 中的源码。
